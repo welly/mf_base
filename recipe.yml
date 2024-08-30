@@ -21,7 +21,7 @@ config:
       simple_config_update:
         first_day: 1
         country.default: GB
-        user.configurable: false
+        timezone.user.configurable: false
     user.role.authenticated:
       grantPermissions:
         - 'access content'
