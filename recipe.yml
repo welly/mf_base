@@ -1,0 +1,31 @@
+name: 'manifesto Base'
+description: 'Base configuration for a new Drupal site'
+type: 'Site'
+install:
+  # core
+  - block_content
+  - node
+  - options
+  - path
+  - path_alias
+  - taxonomy
+  - views
+  # contrib
+  - pathauto
+  - redirect
+config:
+  import:
+    pathauto: "*"
+  actions:
+    system.date:
+      simple_config_update:
+        first_day: 1
+        country.default: GB
+        user.configurable: false
+    user.role.authenticated:
+      grantPermissions:
+        - 'access content'
+        - 'view own unpublished content'
+    user.role.anonymous:
+      grantPermissions:
+        - 'access content'

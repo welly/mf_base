@@ -1,0 +1,10 @@
+{
+    "name": "welly/mf_base",
+    "description": "A recipe to provide a base Drupal configuration for a new site.",
+    "type": "drupal-recipe",
+    "minimum-stability": "dev",
+    "require": {
+        "drupal/pathauto": "^1.13",
+        "drupal/redirect": "^1.10"
+    }
+}
